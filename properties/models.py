@@ -13,7 +13,7 @@ class Property(models.Model):
     summary = models.CharField(blank=False, max_length=120)
     address = models.CharField(blank=False, max_length=40)
     price = models.IntegerField(blank=False)
-    created_at = models.DateTimeField(blank=False)
+    created_at = models.DateTimeField(blank=False, editable=False)
     updated_at = models.DateTimeField(blank=False)
     published_at = models.DateTimeField(blank=False)
 
