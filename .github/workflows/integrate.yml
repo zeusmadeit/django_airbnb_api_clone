@@ -30,6 +30,7 @@ jobs:
         POSTGRES_DB: ${{ secrets.POSTGRES_DB }}
         POSTGRES_USER: ${{ secrets.POSTGRES_USER }}
         POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
+        DOTENV_KEY: ${{ secrets.DOTENV_KEY }}
         SECRET_KEY: ${{ secrets.SECRET_KEY }}
       run: |
         python manage.py test
