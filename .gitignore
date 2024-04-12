@@ -8,8 +8,9 @@ __pycache__/
 
 # Environments
 .env
-!.env.vault
 .env.keys
+.env.production
+!.env.vault
 .venv
 env/
 venv/
