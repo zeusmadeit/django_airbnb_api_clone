@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'graphene_django',
 
     # User defined
     'properties',
@@ -79,6 +80,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'django_airbnb_clone.wsgi.application'
 
+# GraphQL support using Graphene
+# GRAPHENE = {
+#   'SCHEMA': 'properties.schema.schema'
+# }
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
@@ -89,6 +94,7 @@ DATABASES = {
         'NAME': os.getenv("POSTGRES_DB"),
         'USER': os.getenv("POSTGRES_USER"),
         'PASSWORD': os.getenv("POSTGRES_PASSWORD"),
+        "ATOMIC_MUTATIONS": True,
         'HOST': 'db',
         'PORT': 5432,
     }
