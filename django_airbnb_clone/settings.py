@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 from dotenv_vault import load_dotenv
-# import environ
 
 # Load environment variables
 load_dotenv()
