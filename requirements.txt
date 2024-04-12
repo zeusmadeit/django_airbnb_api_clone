@@ -1,6 +1,7 @@
 Django>=4.1,<4.2
 psycopg2-binary>=2.9,<3.0
-django-environ>=0.7,<1.0
+python-dotenv==0.21.1
+python-dotenv-vault==0.6.4
 graphene-django>=3.2
-django-graphql-jwt
-django-graphql-auth
+django-graphql-auth==0.3.7
+django-graphql-jwt==0.4.0
