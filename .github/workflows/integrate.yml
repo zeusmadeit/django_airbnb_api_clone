@@ -2,9 +2,9 @@ name: Django Continous Integration
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "develop", "staging" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "develop", "staging" ]
 
 jobs:
   build-and-test:
